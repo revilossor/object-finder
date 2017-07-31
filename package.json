@@ -22,7 +22,9 @@
   },
   "jest": {
     "collectCoverage": true,
-    "collectCoverageFrom": [ "index.js" ],
+    "collectCoverageFrom": [
+      "index.js"
+    ],
     "coverageThreshold": {
       "global": {
         "branches": 0,
