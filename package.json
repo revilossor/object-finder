@@ -4,6 +4,9 @@
   "description": "find objects that match comparator object of regex fields",
   "main": "index.js",
   "scripts": {
+    "precommit": "npm run lint",
+    "prepush": "npm test",
+    "lint": "npx eslint .",
     "test": "jest"
   },
   "repository": {
@@ -19,10 +22,7 @@
   },
   "jest": {
     "collectCoverage": true,
-    "collectCoverageFrom": [
-      "src/**/*.js",
-      "index.js"
-    ],
+    "collectCoverageFrom": [ "index.js" ],
     "coverageThreshold": {
       "global": {
         "branches": 0,

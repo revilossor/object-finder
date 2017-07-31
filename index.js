@@ -1,3 +1,4 @@
+/*eslint multiline-ternary: ["error", "always"]*/
 const getMatcher = (comparator) => (target) => {          // check all keys from comparator in target for something that DOESNT match, and negate the result
   return !Object.keys(comparator).some((key) => {         // ... this is so we can use Array.some, which breaks on a true value.
     if(!target[key]) { return true; }                     // if there is no target key, then it doesnt match
