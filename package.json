@@ -1,6 +1,6 @@
 {
   "name": "object-finder",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "find objects that match comparator object of regex fields",
   "main": "index.js",
   "scripts": {
